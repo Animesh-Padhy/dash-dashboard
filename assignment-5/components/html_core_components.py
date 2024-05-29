@@ -10,7 +10,7 @@ df = px.data.gapminder()
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = dbc.Container([
-    html.H1('Dash Bootstrap and Core Components'),  # Add a comma here
+    html.H1('Dash Bootstrap and Core Components'),  
     dbc.Row([
         dbc.Col([
             dbc.Label("Dropdown"),
@@ -22,7 +22,7 @@ app.layout = dbc.Container([
                 ],
                 value="Canada"
             )
-        ], width=6),  # Adjust width if necessary
+        ], width=6),  
         dbc.Col([
             dbc.Label("Select Metric"),
             dbc.RadioItems(
@@ -40,7 +40,7 @@ app.layout = dbc.Container([
         dbc.Col([
             dbc.Label("Slider"),
             dcc.Slider(0, 10, 1, value=5)
-        ], width=6),  # Adjust width if necessary
+        ], width=6),  
         dbc.Col([
             dbc.Label("Text-Input"),
             dbc.Input(
